@@ -4,6 +4,8 @@ import "./globals.css";
 import { Poppins } from "next/font/google"
 //components
 import Header from "./Components/Header/Header";
+//animation (aos)
+import AOSInit from "./Components/AOS/AOSInit";
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -24,6 +26,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       </head>
       <body>
         <Header />
+        <AOSInit />
         {children}
       </body>
     </html>

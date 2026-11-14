@@ -7,7 +7,7 @@ const Home = () => {
 
       <div className={styles.subDiv}>
 
-        <div className={styles.imgContainer}>
+        <div className={styles.imgContainer} data-aos="fade-up">
           <div className={styles.txtContainer}>
             <div>
               <h1 className={styles.title}>When life gives you</h1>
@@ -31,7 +31,7 @@ const Home = () => {
 
       </div>
 
-      <div className={styles.hero}>
+      <div className={styles.hero} data-aos="fade-up">
         <Image
           src={'/main.png'}
           alt="main background image"
