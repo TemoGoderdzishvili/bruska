@@ -1,6 +1,61 @@
-.mainContainer{
-    background-color: var(--primary-light);
+.mainContainer {
+    background-color: var(--background);
+}
 
-    /* temp */
-    height: 100vh;
+.subDiv {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: calc(100svh - 100px);
+}
+
+.bgImage {
+    object-fit: cover;
+    z-index: 0;
+}
+
+.imgContainer {
+    height: 600px;
+    display: flex;
+}
+
+.txtContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+.txtContainer h1,
+.txtContainer h2 {
+    font-family: "cooper-black-std", serif;
+    font-weight: 400;
+}
+
+.txtContainer h1 {
+    color: var(--text-primary);
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.txtContainer h2 {
+    color: var(--text-secondary);
+    font-size: 45px;
+}
+
+
+.imgDiv {
+    display: flex;
+    flex: 1;
+    position: relative;
+}
+
+.img{
+    object-fit: cover;
 }

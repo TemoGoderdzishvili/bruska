@@ -26,17 +26,11 @@ const Header = () => {
                 <div className={`${styles.navMenu} ${menuOpen ? styles.open : ''}`}>
                     <li className={styles.navItem}><Link href={'/'} onClick={() => setMenuOpen(false)}>COOKIES</Link></li>
                     <li className={styles.navItem}><Link href={'/'} onClick={() => setMenuOpen(false)}>LOCATION</Link></li>
-                    <li className={styles.navItem}><Link href={'/'} onClick={() => setMenuOpen(false)}>ABOUT US</Link></li>
-
-                    <li className={styles.mobileOrder}>
-                        <Link href={'/'} onClick={() => setMenuOpen(false)}>
-                            <button>ORDER NOW</button>
-                        </Link>
+                    <li className={styles.navItem}>
+                        <div className={styles.orderNow} onClick={() => setMenuOpen(false)}>
+                            <Link href={'/'}><button>ORDER NOW</button></Link>
+                        </div>
                     </li>
-                </div>
-
-                <div className={styles.orderNow}>
-                    <Link href={'/'}><button>ORDER NOW</button></Link>
                 </div>
             </div>
         </div>

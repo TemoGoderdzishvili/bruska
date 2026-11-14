@@ -19,6 +19,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${poppins.variable}`}>
+      <head>
+        <link rel="stylesheet" href="https://use.typekit.net/mbx8tzr.css"></link>
+      </head>
       <body>
         <Header />
         {children}

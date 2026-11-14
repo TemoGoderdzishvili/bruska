@@ -27,6 +27,7 @@
 
 .navMenu {
     display: flex;
+    align-items: center;
     list-style: none;
     gap: 30px;
     font-weight: 600;
@@ -142,7 +143,11 @@
     }
 
     .orderNow{
-        display: none;
+        display: block;
+    }
+
+    .orderNow button{
+        width: 130px;
     }
 
     .navMenu.open {
