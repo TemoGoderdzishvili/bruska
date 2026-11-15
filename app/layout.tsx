@@ -4,6 +4,7 @@ import "./globals.css";
 import { Poppins } from "next/font/google"
 //components
 import Header from "./Components/Header/Header";
+import Footer from "./Components/Footer/Footer";
 //animation (aos)
 import AOSInit from "./Components/AOS/AOSInit";
 
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Header />
         <AOSInit />
         {children}
+        <Footer />
       </body>
     </html>
   );
