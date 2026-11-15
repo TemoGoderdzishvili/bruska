@@ -14,8 +14,9 @@
 }
 
 .logo {
-    max-height: 99px;
+    max-height: 100px;
     width: auto;
+    margin-top: 7px;
 }
 
 .logoDiv{

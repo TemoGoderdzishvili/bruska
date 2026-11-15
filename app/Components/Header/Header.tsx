@@ -12,7 +12,9 @@ const Header = () => {
         <div className={styles.mainContainer}>
             <div className={styles.subDiv}>
                 <div className={styles.logoDiv}>
-                    <img src="/logo.png" alt="" className={styles.logo} />
+                    <Link href={'/'}>
+                        <img src="/logo.png" alt="" className={styles.logo} />
+                    </Link>
                 </div>
 
                 {/* BURGER MENU */}
@@ -24,11 +26,11 @@ const Header = () => {
                 </div>
 
                 <div className={`${styles.navMenu} ${menuOpen ? styles.open : ''}`}>
-                    <li className={styles.navItem}><Link href={'/'} onClick={() => setMenuOpen(false)}>COOKIES</Link></li>
+                    <li className={styles.navItem}><Link href={'/menu'} onClick={() => setMenuOpen(false)}>COOKIES</Link></li>
                     <li className={styles.navItem}><Link href={'/'} onClick={() => setMenuOpen(false)}>LOCATION</Link></li>
                     <li className={styles.navItem}>
                         <div className={styles.orderNow} onClick={() => setMenuOpen(false)}>
-                            <Link href={'/'}><button>ORDER NOW</button></Link>
+                            <Link href={'/order'}><button>ORDER NOW</button></Link>
                         </div>
                     </li>
                 </div>
